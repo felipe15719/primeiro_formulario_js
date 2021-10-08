@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../form/css/style.css" />
+    <title>formulàrio</title>
+  </head>
+  <body>
+    <div>
+      <form id="formCadastro" action="gravarDados.html">
+        <fieldset>
+          <legend>Formulário de contato</legend>
+          <div>
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" />
+            <span class="erro"></span>
+          </div>
+
+          <div>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" />
+            <span class="erro"></span>
+          </div>
+
+          <div>
+            <label>Telefone</label>
+            <input
+              type="telefone"
+              name="telefone"
+              placeholder="Digite seu telefone"
+            />
+            <span class="erro"></span>
+          </div>
+
+          <div>
+            <label
+              >Cidade
+              <select name="cidade">
+                <option value="">-- selecione --</option>
+                <option value="santos">Santos</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="recife">Recife</option>
+                <option value="cuiaba">Cuiaba</option>
+              </select>
+              <span class="erro"></span>
+            </label>
+          </div>
+          <button type="submit">cadastrar</button>
+        </fieldset>
+      </form>
+    </div>
+    <script src="../form/js/script.js"></script>
+  </body>
+</html>
